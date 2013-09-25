@@ -1,0 +1,83 @@
+| REQUEST |
+
+http://secretliterary.blogspot.com/
+
+GET / HTTP/1.1
+>> method HTTP yang digunakan untuk meminta resource tertentu dari server <<
+_____________________________________________________________________________
+
+Host: secretliterary.blogspot.com
+>> Host merupakan nama komputer. Pemberian nama ini spesifik, untuk satu komputer tertentu saja dalam suatu jaringan <<
+_______________________________________________________________________________________________________________________
+
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:25.0) Gecko/20100101 Firefox/25.0
+>> User Agent merupakan identitas dari browser yang sedang digunakan, disini User menggunakan browser Mozilla Firefox User Agent berupa sederatan kode string informasi yang dikirim ke web server dari browser yang kita gunakan saat mengakses sebuah halaman web <<
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+>> server dapat menerima text html <<
+________________________________________________________________________
+
+Accept-Language: en-US,en;q=0.5
+>> server dapat menerima bahasa "english-United Stated <<
+_______________________________________________________
+
+Accept-Encoding: gzip, deflate
+>> header accept-Encoding: untuk menerima pengkodean gzip, deflate dalam permintaan HTTP. GZIP adalah metode kompresi yang paling efektif yang tersedia saat ini <<
+__________________________________________________________________________________________________________________________________________
+
+Referer: http://www.blogger.com/home
+>> Referer digunakan untuk menunjuk alamat web yang diminta <<
+_______________________________________________________________
+
+Connection: keep-alive
+>> Koneksi yang dapat diakses <<
+_____________________________________
+
+| RESPON |
+
+HTTP/1.1 200 OK
+>> Server telah menyetujui pengaksesan Blog <<
+________________________________________________
+
+Content-Type: text/html; charset=UTF-8
+>> Content-Type berupa text html <<
+_______________________________________
+
+Expires: Wed, 25 Sep 2013 07:02:55 GMT
+>> Masa aktif pengaksesan Blog <<
+______________________________________
+
+Date: Wed, 25 Sep 2013 07:02:55 GMT
+>> Waktu User saat mengakses sebuah halaman web (Blog) <<
+_________________________________________________________
+
+Cache-Control: private, max-age=0
+>> Pengawasan privasi halaman web <<
+_____________________________________
+
+Last-Modified: Sat, 21 Sep 2013 03:55:50 GMT
+>> Masa sebelum pengaksesan halaman web yang sama <<
+_____________________________________________________
+
+Etag: "834dcfe7-fff0-4330-b3e5-fbeaf1ad640f"
+
+Content-Encoding: gzip
+>> Konten Pengkodean gzip <<
+______________________________________________
+
+X-Content-Type-Options: nosniff
+
+X-XSS-Protection: 1; mode=block
+
+Content-Length: 565936
+>> Panjang konten halaman web <<
+__________________________________
+
+Server: GSE
+>> Servernya berupa GSE <<
+___________________________
+
+Alternate-Protocol: 80:quic
+>> Pengubah Protokol <<
+----------------------------------------------------------
